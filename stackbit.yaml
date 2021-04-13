@@ -1,4 +1,5 @@
 stackbitVersion: ~0.3.0
+nodeVersion: '>=12'
 models:
   blog:
     label: Blog
@@ -133,7 +134,8 @@ models:
         type: string
       - name: path_prefix
         required: true
-        description: 'The base URL of this site. Useful for sites hosted under specific
+        description:
+          'The base URL of this site. Useful for sites hosted under specific
           path, e.g.: https://www.example.com/my-site/'
         hidden: true
         label: Base URL
@@ -220,7 +222,8 @@ models:
             - notranslate
             - none
       - name: extra
-        description: Additional definition for specific meta tags such as open-graph,
+        description:
+          Additional definition for specific meta tags such as open-graph,
           twitter, etc.
         label: Extra
         type: list
@@ -245,7 +248,8 @@ models:
     label: Header Configuration
     fields:
       - name: logo_img
-        description: The logo image displayed in the header (if no logo added, the site
+        description:
+          The logo image displayed in the header (if no logo added, the site
           title is displayed instead)
         label: Logo
         type: image
@@ -387,7 +391,8 @@ models:
         label: Form ID
         type: string
       - name: form_action
-        description: The path of your custom "success" page, if you want to replace the
+        description:
+          The path of your custom "success" page, if you want to replace the
           default success message.
         label: Form Action
         type: string
@@ -434,7 +439,8 @@ models:
         label: Label
         type: string
       - name: default_value
-        description: The placeholder for textual field types or default option for
+        description:
+          The placeholder for textual field types or default option for
           select field
         label: Placeholder text or default value
         type: string
@@ -909,7 +915,8 @@ models:
         label: Form ID
         type: string
       - name: form_action
-        description: The path of your custom "success" page, if you want to replace the
+        description:
+          The path of your custom "success" page, if you want to replace the
           default success message.
         label: Form Action
         type: string
