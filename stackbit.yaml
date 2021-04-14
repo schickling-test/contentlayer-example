@@ -1,5 +1,6 @@
 stackbitVersion: ~0.3.0
 nodeVersion: '>=12'
+ssgName: nextjs
 models:
   blog:
     label: Blog
