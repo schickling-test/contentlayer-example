@@ -39,45 +39,45 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@contentlayer/cli@0.0.2-8":
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.0.2-8.tgz#60c518f1de266597b4e81fd401a281df3e4da711"
-  integrity sha512-o9sGjhctVhgvo8CgbYl/TOVDvCnbPFY1+CbfeTee6beQa/SKmzeeKKH7rmyxI2P2zIFTVA7mw0Jn8gVivrdgfg==
+"@contentlayer/cli@0.0.2-9":
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/cli/-/cli-0.0.2-9.tgz#f71c8546d23730fa903fceda53db92f0c7067338"
+  integrity sha512-WoIbuOCgTdjyiJt4rA3QgMEmOF2gVLFvL4uTBuKSdRDXrner+XfYiZVxNSHcydQsTIeLCveBhN3aHykXNDnLbg==
   dependencies:
-    "@contentlayer/core" "0.0.2-8"
+    "@contentlayer/core" "0.0.2-9"
     clipanion "^3.0.0-rc.11"
     typanion "^3.3.0"
 
-"@contentlayer/client@0.0.2-8":
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/@contentlayer/client/-/client-0.0.2-8.tgz#cdd3259b2e2869f1ff4ecc1ba092632f47882b54"
-  integrity sha512-Ti3qFGY1d6kEQgCcVYBE3GsGUId0OzATx7Jc5ylzyVHLAtI8ePIu915A+PjXggYEZkGj6BnqfqPA5pUri9sMXA==
+"@contentlayer/client@0.0.2-9":
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/client/-/client-0.0.2-9.tgz#c24535b2014cb1d77430c718432a26b4045b7ca9"
+  integrity sha512-Gc+C4GXG025oOb9spOht0QZNWteZsvCiCVffdc8VazoFStNDrQRgKZBE/XW3JxmNtIx67EMsZg1ztZFT9dWlgw==
   dependencies:
-    "@contentlayer/core" "0.0.2-8"
+    "@contentlayer/core" "0.0.2-9"
 
-"@contentlayer/core@0.0.2-8":
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/@contentlayer/core/-/core-0.0.2-8.tgz#83c381ef8e72aa6319827f8378e52dda08ee3c57"
-  integrity sha512-OHJOGCXbJqOtK66+ZZx/nzEGWJdqYLwMtBDHSLcmNGvbMneBnaAP4+MJzILZqzXenmHNlqpaqzCyFNYFl9lHgw==
+"@contentlayer/core@0.0.2-9":
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/core/-/core-0.0.2-9.tgz#08d6ea26cde0e216ca98bd9d1da64d11908d9362"
+  integrity sha512-vVGuvrdjqL9343LP2s4lLzNvjBt/A0NDaQA8jlt3/3A/Gq45Rtw69vGpGSLCV8B28iS2zj4J4T8AH2Mp7482Hg==
   dependencies:
     esbuild "^0.11.5"
     pkg-up "^3.1.0"
     rxjs "^6.6.7"
 
-"@contentlayer/react@0.0.2-8":
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/@contentlayer/react/-/react-0.0.2-8.tgz#d65d0a653c9413bbdc81b83dc80dee0d6195fa90"
-  integrity sha512-hVlqL2u5AM683DpH9hkicJjq6hoQKJmB7GYF9Zfy9s+fI3hWwb+9zVelefnU8iDbDggLrPUM78dc581RBGAO/Q==
+"@contentlayer/react@0.0.2-9":
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/react/-/react-0.0.2-9.tgz#f482813cb774f967ce0af37c6c50a0efa8a95078"
+  integrity sha512-pHr4LTptApMhPDRCt4uGlRbaQpTY6o1yniWRvPDDR6P+v/x2N1zGXxi8tQp5PxpzDl69Mcc5rXJo0fFMp5I/Lw==
   dependencies:
-    "@contentlayer/client" "0.0.2-8"
-    "@contentlayer/core" "0.0.2-8"
+    "@contentlayer/client" "0.0.2-9"
+    "@contentlayer/core" "0.0.2-9"
 
-"@contentlayer/source-local@0.0.2-8":
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/@contentlayer/source-local/-/source-local-0.0.2-8.tgz#e40a2d228965a1964f583ecbc1030a0bb8e6c594"
-  integrity sha512-qDIhnQKEG3O/xWx/gK93d9HEL08qkGO3t2z7VsBxQIn+LYzx6i/oeInOUVWt+aAakNQhXq5aAPIyLK5RhVPs7Q==
+"@contentlayer/source-local@0.0.2-9":
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/@contentlayer/source-local/-/source-local-0.0.2-9.tgz#902ea3201658337ef17bbcb20c23b6ff3214c965"
+  integrity sha512-b74SfF+U1EGIR25h+Y5fn9CdEZnxVB8PlAoHHZewyr0Fu++WcXsF7VrEwZisU2iI/gUdEQuFM0vEGpbBTfr/oA==
   dependencies:
-    "@contentlayer/core" "0.0.2-8"
+    "@contentlayer/core" "0.0.2-9"
     chokidar "^3.5.1"
     glob "^7.1.6"
     glob-promise "^4.0.1"
@@ -767,26 +767,26 @@ constants-browserify@1.0.0, constants-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
   integrity sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U=
 
-contentlayer-stackbit-yaml-generator@0.0.2-8:
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/contentlayer-stackbit-yaml-generator/-/contentlayer-stackbit-yaml-generator-0.0.2-8.tgz#ede8220ae959f7160d747e544a853bf4d59f4796"
-  integrity sha512-sfd3oj6VzPm0IQJXEm8+ighC118Gsrpw7NQAshsbUMASVdAUOf3RkfHQoJeHrZaqr3R4xBmTWncstI91DhWmaw==
+contentlayer-stackbit-yaml-generator@0.0.2-9:
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/contentlayer-stackbit-yaml-generator/-/contentlayer-stackbit-yaml-generator-0.0.2-9.tgz#c8976d0f9412b5d1c4985601035ef43c21476fa9"
+  integrity sha512-6eANmX+mUd9OEvdneEwuezFZduB40YWrE3yqcpi/zNArrO78GmrFffwiKfHmh78eE0l6AjFBFpPbw79sV8I/3Q==
   dependencies:
-    "@contentlayer/core" "0.0.2-8"
+    "@contentlayer/core" "0.0.2-9"
     "@stackbit/sdk" "^0.1.9"
     clipanion "^3.0.0-rc.11"
     yaml "^1.10.2"
 
-contentlayer@0.0.2-8:
-  version "0.0.2-8"
-  resolved "https://registry.yarnpkg.com/contentlayer/-/contentlayer-0.0.2-8.tgz#6247140bb4da3785d425d551cbd3cd0ea14c1ad8"
-  integrity sha512-x62HgjOcMpvecCU89A36bCaj8HmSMvK316Gvh2hwEU65oY0VGqPoST2dMvJkbp7kojZ732OXK4mmn6OIMMDl/w==
+contentlayer@0.0.2-9:
+  version "0.0.2-9"
+  resolved "https://registry.yarnpkg.com/contentlayer/-/contentlayer-0.0.2-9.tgz#28eb5d7ef1c9b8819b50d087594cb58a83c5fa20"
+  integrity sha512-G81/mi75Wr1APmfTxrmN1svwYJJsYdUniDDlgzkIQM100MyzIK3bqkpxtIha8ARkQAiHTP4TejGb9183oqiDwg==
   dependencies:
-    "@contentlayer/cli" "0.0.2-8"
-    "@contentlayer/client" "0.0.2-8"
-    "@contentlayer/core" "0.0.2-8"
-    "@contentlayer/react" "0.0.2-8"
-    "@contentlayer/source-local" "0.0.2-8"
+    "@contentlayer/cli" "0.0.2-9"
+    "@contentlayer/client" "0.0.2-9"
+    "@contentlayer/core" "0.0.2-9"
+    "@contentlayer/react" "0.0.2-9"
+    "@contentlayer/source-local" "0.0.2-9"
 
 convert-source-map@1.7.0:
   version "1.7.0"
