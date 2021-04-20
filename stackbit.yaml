@@ -1,9 +1,14 @@
 stackbitVersion: ~0.3.0
-nodeVersion: '>=12'
+nodeVersion: '>=14'
 ssgName: nextjs
+devCommand: node dev.js ./contentlayer/contentlayer.ts
+pagesDir: contentlayer/content/pages
+dataDir: contentlayer/content/data
 models:
   blog:
     label: Blog
+    singleInstance: true
+    file: blog.md
     fields:
       - name: title
         required: true
@@ -17,6 +22,11 @@ models:
     type: page
   landing:
     label: Landing Page
+    match:
+      - index.md
+      - contact.md
+      - pricing.md
+      - features.md
     fields:
       - name: title
         required: true
@@ -46,6 +56,12 @@ models:
     type: page
   page:
     label: Page
+    match: '*.md'
+    exclude:
+      - index.md
+      - contact.md
+      - pricing.md
+      - features.md
     fields:
       - name: title
         required: true
@@ -76,6 +92,7 @@ models:
     type: page
   post:
     label: Post
+    folder: blog
     fields:
       - name: title
         required: true
@@ -127,6 +144,7 @@ models:
     type: page
   config:
     label: Site Configuration
+    file: config.json
     fields:
       - name: title
         required: true
@@ -186,6 +204,7 @@ models:
     type: data
   person:
     label: Person
+    folder: authors
     fields:
       - name: first_name
         type: string
@@ -274,7 +293,7 @@ models:
     type: object
   action:
     label: Action
-    labelField: title
+    labelField: label
     fields:
       - name: label
         required: true
@@ -382,6 +401,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: footer_form
       - name: content
         description: The content of the section, appears above the form
         label: Content
@@ -469,6 +489,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: footer_nav
       - name: nav_links
         description: List of vertical navigation links
         label: Vertical Navigation Links
@@ -491,6 +512,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: footer_text
       - name: image
         description: The image displayed in the section
         label: Image
@@ -525,6 +547,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_content
       - name: content
         description: The text content of the section
         label: Content
@@ -570,6 +593,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_cta
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -599,6 +623,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_faq
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -646,6 +671,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_features
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -710,6 +736,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_hero
       - name: content
         description: The text content of the section
         label: Content
@@ -746,6 +773,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_posts
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -775,6 +803,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_pricing
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -840,6 +869,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_reviews
       - name: subtitle
         description: The subtitle of the section
         label: Subtitle
@@ -862,7 +892,7 @@ models:
     type: object
   review_item:
     label: Review Item
-    labelField: title
+    labelField: author
     fields:
       - name: author
         label: Author
@@ -894,6 +924,7 @@ models:
         description: Needed for contentlayer for polymorphic list types
         label: Section type
         type: string
+        const: section_contact
       - name: subtitle
         description: The text shown below the title
         label: Subtitle
