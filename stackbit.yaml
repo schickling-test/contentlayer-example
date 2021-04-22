@@ -1,9 +1,14 @@
 stackbitVersion: ~0.3.0
-nodeVersion: '>=14'
+nodeVersion: '14'
 ssgName: nextjs
 devCommand: node dev.js ./contentlayer/contentlayer.ts
 pagesDir: contentlayer/content/pages
 dataDir: contentlayer/content/data
+assets:
+  referenceType: static
+  staticDir: public
+  uploadDir: images
+  publicPath: /
 models:
   blog:
     label: Blog
