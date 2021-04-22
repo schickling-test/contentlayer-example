@@ -32,6 +32,8 @@ models:
       - contact.md
       - pricing.md
       - features.md
+    urlPath: '/{slug}'
+    filePath: '{slug}.md'
     fields:
       - name: title
         required: true
@@ -67,6 +69,8 @@ models:
       - contact.md
       - pricing.md
       - features.md
+    urlPath: '/{slug}'
+    filePath: '{slug}.md'
     fields:
       - name: title
         required: true
@@ -98,6 +102,8 @@ models:
   post:
     label: Post
     folder: blog
+    urlPath: '/blog/{slug}'
+    filePath: 'blog/{slug}.md'
     fields:
       - name: title
         required: true
