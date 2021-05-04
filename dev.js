@@ -6,7 +6,7 @@ const { watch } = require('contentlayer/core')
 const { parse } = require('url')
 
 const app = next({ dev: true, dir: process.cwd() })
-const port = parseInt(process.env.STACKBIT_INTERNAL_PORT, 10) || 3000
+const port = parseInt(process.env.PORT, 10) || 3000
 const handle = app.getRequestHandler()
 const configPath = process.argv[2]
 
@@ -27,7 +27,7 @@ app.prepare().then(async () => {
 
   createServer((req, res) => {
     handle(req, res, parse(req.url, true))
-  }).listen(port, process.env.STACKBIT_INTERNAL_HOST ?? '0.0.0.0', (err) => {
+  }).listen(port, process.env.HOSTNAME || '0.0.0.0', (err) => {
     if (err) throw err
     console.log(`> Ready on http://localhost:${port}`)
   })
